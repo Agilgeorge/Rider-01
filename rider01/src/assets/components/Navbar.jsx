@@ -11,9 +11,9 @@ export default class Navbar extends Component {
         <img src={skull} alt="Skull Logo" className='h-44 w-44 ml-0 mt-4' />
 
         <div className='flex flex-grow justify-center space-x-24 text-white text-lg'>
-          <a to="/App" className='hover:text-gray-400 font-arsenal'>Home</a>
-          <a to="/gallery" className='hover:text-gray-400 font-arsenal'>Ride_Gallery</a>
-          <a to="/review" className='hover:text-gray-400 font-arsenal'>Ride _Reviews</a>
+          <a to="/App" className='hover:text-gray-400 font-arsenal'>HOME</a>
+          <a to="/gallery" className='hover:text-gray-400 font-arsenal'>RIDE_GALLERY</a>
+          <a to="/review" className='hover:text-gray-400 font-arsenal'>RIDE_REVIEWS</a>
         </div>
       </div>
     );
