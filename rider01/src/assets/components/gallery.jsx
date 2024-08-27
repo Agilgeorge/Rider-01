@@ -1,12 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Slider from "react-slick";
-
-// Import slick-carousel CSS files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Import your images
 import kolli1 from "../images/kolli1.jpeg";
 import kolli2 from "../images/kolli2.jpg";
 import kolli3 from "../images/kolli3.jpg";
@@ -17,7 +13,6 @@ import yelagiri1 from "../images/yelagir1.jpg";
 import yelagiri3 from "../images/yelagiri3.jpeg"
 
 const Gallery = () => {
-  // Slider settings
   const settings = {
     dots: true,
     infinite: true,
@@ -30,14 +25,11 @@ const Gallery = () => {
 
   return (
     <div>
-      {/* Title Section */}
       <div className="flex justify-center mt-12">
         <h1 className="font-felldo drop-shadow-xl font-semibold text-4xl">
           Our Rides
         </h1>
       </div>
-
-      {/* Kolli Hills Slider */}
       <div className="mt-12">
         <h2 className="font-semibold text-3xl text-center mb-6">Kolli Hills</h2>
         <Slider {...settings} className="w-3/4 mx-auto">
@@ -64,8 +56,6 @@ const Gallery = () => {
           </div>
         </Slider>
       </div>
-
-      {/* Yelagiri Slider */}
       <div className="mt-12">
         <h2 className="font-semibold text-3xl text-center mb-6">Yelagiri</h2>
         <Slider {...settings} className="w-3/4 mx-auto">
@@ -85,8 +75,6 @@ const Gallery = () => {
           </div>
         </Slider>
       </div>
-
-      {/* Meghamalai Slider */}
       <div className="mt-12 mb-12">
         <h2 className="font-semibold text-3xl text-center mb-6">Meghamalai</h2>
         <Slider {...settings} className="w-3/4 mx-auto">
