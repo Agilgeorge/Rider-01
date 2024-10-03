@@ -4,14 +4,25 @@ import Navbar from './assets/components/Navbar';
 import Gallery from './assets/components/gallery';
 import Review from './assets/components/review';
 import coverimage from "./assets/images/coverimage.jpg";
+
+function Home() {
+  return (
+    <div>
+      <img src={coverimage} className='h-3/4' alt="Cover" />
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
       <div>
-        <Navbar/>
-        <img src={coverimage} className=' h-3/4 '/>
+        <Navbar />
         <Routes>
-          <Route path="/App" element={<App />} />
+          {/* Home Route */}
+          <Route path="/App" element={<Home />} />
+
+          {/* Other Routes */}
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/review" element={<Review />} />
         </Routes>
